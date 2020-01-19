@@ -53,12 +53,12 @@ console.log(produceProduct(1, 2));
 
 //printString Function
 
-let printString = (firstName, lastName, age) => "Hi " + firstName + " " + lastName + " how does it feel to be " + age + "?";
-console.log(printString("Jane", "Doe", 100));
+let printString = (firstName = "Jane", lastName = "Doe", age = 100) => "Hi " + firstName + " " + lastName + " how does it feel to be " + age + "?";
+console.log(printString("Kat", "Stark", 40));
 
 //using template literals
-let printStringTemplateLiterals = (firstName, lastName, age) => `Hi ${firstName} ${lastName} how does it feel to be ${age}?`; 
-console.log(printStringTemplateLiterals("Jane", "Doe", 100));
+let printStringTemplateLiterals = (firstName = "Jane", lastName = "Doe", age = 100) => `Hi ${firstName} ${lastName} how does it feel to be ${age}?`; 
+console.log(printStringTemplateLiterals("Kat", "Stark", 40));
 
 //use shorthand syntax to mkae filter take up one line
 const animals = [
